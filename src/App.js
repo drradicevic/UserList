@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import { Header } from "./components/Header/Header";
 
@@ -9,10 +9,13 @@ import { UserList } from "./components/UserList/UserList";
 import "./App.css";
 
 function App() {
+  const [isListView, setIsListView] = useState(true);
+  console.log("App: ", isListView);
+  const onLayoutChange = () => setIsListView(!isListView);
   return (
     <Fragment>
-      <Header />
-      <UserList />
+      <Header isListView={isListView} onLayoutChange={onLayoutChange} />
+      <UserList isListView={isListView} />
       <Footer />
     </Fragment>
   );
