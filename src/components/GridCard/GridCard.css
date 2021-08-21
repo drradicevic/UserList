@@ -1,6 +1,8 @@
 .card-container {
   width: 30%;
   display: inline-block;
+  border: 2px solid grey;
+  margin-bottom: 10px;
 }
 
 .img-container {
