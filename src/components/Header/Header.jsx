@@ -7,7 +7,7 @@ const Header = ({isListView, onLayoutChange }) => {
     return (
         <div className="header">
                 <p>React Users</p>
-                <button onClick={onLayoutChange}>{isListView ? 'Grid View' : 'List View'}</button>
+                <button className="btn" onClick={onLayoutChange}>{isListView ? 'Grid View' : 'List View'}</button>
                 
         </div>
         
