@@ -12,7 +12,7 @@ const User = (props) => {
             </div>
             <div className="user-data">
                 <p>name:{props.userData.name.first}</p>
-                <p>email:{props.userData.email}</p>
+                <p>eemail:{props.userData.email}</p>
                 <p>date of birth:{props.userData.dob.date}</p>
             </div>   
         </div>
