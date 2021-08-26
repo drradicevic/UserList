@@ -4,6 +4,6 @@ export const getUsers = () => {
   return fetch(endPoint)
     .then((res) => res.json())
     .then((res) => {
-      return res.result;
+      return res.results;
     });
 };
